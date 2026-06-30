@@ -1,1 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 @import "tailwindcss";
+@theme {
+  --font-public-sans: "Public Sans", sans-serif;
+  --color-bg:#F2F3F7;
+  --color-white: #FFFFFF;
+  --color-beige-500: #98908B;
+  --color-beige-100: #F8F4F0;
+  --color-grey-900: #201F24;
+  --color-grey-500: #696868;
+  --color-grey-300: #B3B3B3;
+  --color-grey-100: #F2F2F2;
+  --color-green: #277C78;
+  --color-yellow: #F2CDAC;
+  --color-cyan: #82C9D7;
+  --color-navy: #626070;
+  --color-red: #C94736;
+  --color-purple: #826CB0;
+  --color-purple2: #AF81BA;
+  --color-turquoise: #597C7C;
+  --color-brown: #93674F;
+  --color-magenta: #934F6F;
+  --color-blue: #3F82B2;
+  --color-navy-grey: #97A0AC;
+  --color-army-green: #7F9161;
+  --color-gold: #CAB361;
+  --color-orange: #BE6C49;
+
+  --text-preset-1: 32px / 120%;
+  --text-preset-2: 20px / 120%;
+  --text-preset-3: 16px / 150%;
+  --text-preset-4: 14px / 150%;
+  --text-preset-5: 12px / 150%;
+
+  --spacing-500: 40px;
+  --spacing-400: 32px;
+  --spacing-300: 24px;
+  --spacing-250: 20px;
+  --spacing-200: 16px;
+  --spacing-150: 12px;
+  --spacing-100: 8px;
+  --spacing-50: 4px;
+}
+@utility preset-1 {
+  @apply text-[32px] font-bold tracking-normal
+}
+@utility preset-2 {
+  @apply text-[20px] font-bold tracking-normal
+}
+@utility preset-3 {
+  @apply text-[16px] font-bold tracking-normal
+}
+@utility preset-4 {
+  @apply text-[14px] font-normal tracking-normal
+}
+@utility preset-4-bold {
+  @apply text-[14px] font-bold tracking-normal
+}
+@utility preset-5 {
+  @apply text-[12px] font-normal tracking-normal
+}
+@utility preset-5-bold {
+  @apply text-[12px] font-bold tracking-normal  
+}
