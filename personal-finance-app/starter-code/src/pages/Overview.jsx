@@ -1,6 +1,9 @@
+
 import BalanceCard from "../components/BalanceCard"
 import ButtonTertiary from "../components/ButtonTertiary"
+import Piechart from "../components/Piechart"
 import PotsCard from "../components/PotsCard"
+import RecurringCard from "../components/RecurringCard"
 import TransactionItem from "../components/TransactionItem"
 export default function Overview(){
     return(
@@ -26,7 +29,7 @@ export default function Overview(){
                     balanceColor="text-grey-900"
                     />
             </section>
-            <section>{/*content*/}
+            <section className="space-y-300">{/*content*/}
                 <section className="space-y-200">{/*left*/}
                     <section className="bg-white rounded-xl space-y-250 px-250 py-300" aria-labelledby="pots-heading">{/*frame 501*/}
                         <div className="flex justify-between items-center ">
@@ -94,7 +97,74 @@ export default function Overview(){
                     </section>
 
                 </section>
-                <section>{/*right*/}
+                <section className="space-y-200">{/*right*/}
+                    <section className="bg-white rounded-xl space-y-250 px-250 py-300" aria-labelledby="pots-heading">{/*frame 501*/}
+                        <div className="flex justify-between items-center ">
+                            <h2 className="preset-2">Budgets</h2>
+                            <ButtonTertiary name={"See Details"} />
+                        </div>
+                        <div className="w-full flex justify-center">
+                            <Piechart/>
+                        </div>
+                        <div className="grid grid-cols-2 gap-200">
+                            <PotsCard
+                                title={"Entertainment"}
+                                balance={"$50.00"}
+                                color={"bg-green"}
+                               
+                            />
+                            <PotsCard
+                                title={"Bills"}
+                                balance={"$750.00"}
+                                color={"bg-cyan"}
+
+                            />
+                            <PotsCard
+                                title={"Dining Out"}
+                                balance={"$75.00"}
+                                color={"bg-yellow"}
+                            />
+                            
+                            <PotsCard
+                                title={"Personal Care"}
+                                balance={"$100.00"}
+                                color={"bg-navy"}
+                                
+                            />
+                            
+                           
+                        </div>
+                    </section>
+                    <section className="bg-white rounded-xl space-y-250 px-250 py-300" aria-labelledby="pots-heading">{/*frame 502*/}
+                        <div className="flex justify-between items-center ">
+                            <h2 className="preset-2">Recurring Bills</h2>
+                            <ButtonTertiary name={"See Details"} />
+                        </div>
+                        <div className="flex flex-col gap-250">
+                            <RecurringCard
+                                title={"Paid Bills"}
+                                balance={"$190.00"}
+                                color={"bg-green"}
+                                className={"border-l-green"}
+                            />
+                            <RecurringCard
+                                title={"Total Upcoming"}
+                                balance={"$194.98"}
+                                color={"bg-yellow"}
+                                className={"border-l-yellow"}
+                               
+                            />
+                            <RecurringCard
+                                title={"Total Upcoming"}
+                                balance={"$194.98"}
+                                color={"bg-cyan"}
+                                className={"border-l-cyan"}
+                                
+                            />
+
+
+                        </div>
+                    </section>
 
                 </section>
             </section>
