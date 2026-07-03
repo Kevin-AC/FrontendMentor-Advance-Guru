@@ -92,6 +92,18 @@ export default function Overview(){
                                 amount={34}
                                 date={"26-04-2028"}
                             />
+                            <TransactionItem
+                                name={"Kevin"}
+                                avatar={"/images/avatars/daniel-carter.jpg"}
+                                amount={34}
+                                date={"26-04-2028"}
+                            />
+                            <TransactionItem
+                                name={"Kevin"}
+                                avatar={"/images/avatars/daniel-carter.jpg"}
+                                amount={34}
+                                date={"26-04-2028"}
+                            />
 
                         </div>
                     </section>
@@ -140,7 +152,7 @@ export default function Overview(){
                             <h2 className="preset-2">Recurring Bills</h2>
                             <ButtonTertiary name={"See Details"} />
                         </div>
-                        <div className="flex flex-col gap-250">
+                        <div className="flex flex-col gap-250 lg:gap-150">
                             <RecurringCard
                                 title={"Paid Bills"}
                                 balance={"$190.00"}
