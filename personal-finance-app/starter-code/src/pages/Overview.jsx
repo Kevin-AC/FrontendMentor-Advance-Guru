@@ -7,9 +7,9 @@ import RecurringCard from "../components/RecurringCard"
 import TransactionItem from "../components/TransactionItem"
 export default function Overview(){
     return(
-        <main className="px-300 py-200 space-y-400">
+        <main className="space-y-400">
             <h2 className="preset-1 text-grey-900">Overview</h2>
-            <section className="flex flex-col sm:flex-row gap-150">{/*summary */}
+            <section className="lg:w-265  flex flex-col sm:flex-row gap-150 lg:gap-300 ">{/*summary */}
                 <BalanceCard 
                     title={"Current Balance"} 
                     balance={"$4,836.00"}
@@ -29,8 +29,8 @@ export default function Overview(){
                     balanceColor="text-grey-900"
                     />
             </section>
-            <section className="space-y-300">{/*content*/}
-                <section className="space-y-200">{/*left*/}
+            <section className=" lg:w-265 space-y-300 lg:flex lg:gap-300 ">{/*content*/}
+                <section className=" lg:w-152 space-y-200 ">{/*left*/}
                     <section className="bg-white rounded-xl space-y-250 px-250 py-300 sm:p-400" aria-labelledby="pots-heading">{/*frame 501*/}
                         <div className="flex justify-between items-center ">
                             <h2 className="preset-2">Pots</h2>
@@ -97,17 +97,17 @@ export default function Overview(){
                     </section>
 
                 </section>
-                <section className="space-y-200">{/*right*/}
+                <section className="lg:w-107 space-y-200 ">{/*right*/}
                     <section className="bg-white rounded-xl space-y-250  px-250 py-300 sm:p-400" aria-labelledby="pots-heading">{/*frame 501*/}
                         <div className="flex justify-between items-center ">
                             <h2 className="preset-2">Budgets</h2>
                             <ButtonTertiary name={"See Details"} />
                         </div>
-                        <div className="flex flex-col sm:flex-row gap-200 ">
-                            <div className="w-full sm:w-lg flex justify-center border">
+                        <div className="flex flex-col sm:flex-row sm:justify-between gap-200 ">
+                            <div className="w-fit sm:w-126 lg:w-fit flex justify-center">
                                 <Piechart />
                             </div>
-                            <div className="grid grid-cols-2 sm:grid-cols-1 gap-200">
+                            <div className="grid grid-cols-2 sm:grid-cols-1 gap-200 ">
                                 <PotsCard
                                     title={"Entertainment"}
                                     balance={"$50.00"}

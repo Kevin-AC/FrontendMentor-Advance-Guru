@@ -3,10 +3,8 @@ import Overview from "./pages/Overview"
 function App() {
 
   return (
-    <main className="w-full font-public-sans grid place-content-center bg-bg">
-      <div className="w-3xl border">
-        <Overview />
-      </div>
+    <main className="w-full max-w-360 h-auto px-200 py-300 sm:px-500 sm:py-400 font-public-sans bg-bg">
+      <Overview />
      
     </main>
   )
