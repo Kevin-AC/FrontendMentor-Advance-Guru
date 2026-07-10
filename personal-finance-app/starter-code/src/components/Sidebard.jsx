@@ -3,7 +3,7 @@ import { useState } from "react"
 export default function Sidebard(){
     const [isMinimized, setIsMinimized]= useState(false)
     return(
-        <aside className={`p-0 bottom-0 absolute z-50 w-full  rounded-t-2xl  lg:h-full lg:rounded-t-none  lg:rounded-r-2xl bg-grey-900 flex flex-col justify-between transition-all duration-300 ${isMinimized ? "lg:w-28" : "lg:w-75"}`}>
+        <aside className={`p-0 bottom-0 absolute lg:relative z-50  w-full  rounded-t-2xl  lg:h-full lg:rounded-t-none  lg:rounded-r-2xl bg-grey-900 flex flex-col justify-between transition-all duration-300 ${isMinimized ? "lg:w-28" : "lg:w-75"}`}>
             <div className="h-full">
                 <div className="hidden lg:block px-500 py-400">
                     {isMinimized ? (
