@@ -64,5 +64,9 @@
   @apply text-[12px] font-bold tracking-normal  
 }
 @utility selecctedNav{
-  @apply  bg-beige-100 w-16 sm:w-25.5 lg:h-12 flex place-content-center lg:place-content-start  rounded-t-lg border-b-4 border-green lg:border-l-4 lg:border-b-0 lg:w-full lg:rounded-t-none lg:rounded-r-lg  
+  @apply  bg-beige-100 text-grey-900 border-b-4 border-green rounded-t-lg lg:border-l-4 lg:border-b-0 lg:rounded-t-none lg:rounded-r-lg;
+}
+
+@utility tabNav{
+  @apply  flex flex-col lg:gap-200 justify-center items-center h-14 sm:h-16 w-16 sm:w-26  preset-3 transition-all duration-200 lg:flex-row lg:w-full lg:justify-start lg:px-400 lg:py-200
 }
