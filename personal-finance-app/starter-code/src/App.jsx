@@ -10,7 +10,7 @@ function App() {
     <BrowserRouter>
       <main className="w-full h-screen flex font-public-sans bg-bg overflow-hidden">
         <Sidebard />
-        <section className="flex-1 h-full px-200 py-300 sm:px-500 sm:py-400 overflow-y-auto">
+        <section className="flex-1 h-full  overflow-y-auto">
           <Routes>
             <Route path='/' element={<Overview/>}/>
             <Route path='/transactions' element={<Transactions/>}/>

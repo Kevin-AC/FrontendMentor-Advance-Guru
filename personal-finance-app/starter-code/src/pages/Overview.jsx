@@ -7,7 +7,7 @@ import RecurringCard from "../components/RecurringCard"
 import TransactionItem from "../components/TransactionItem"
 export default function Overview(){
     return(
-        <main className="space-y-400">
+        <main className="space-y-400 px-200 py-300 sm:px-500 sm:py-400">
             <h2 className="preset-1 text-grey-900">Overview</h2>
             <section className="lg:w-265  flex flex-col sm:flex-row gap-150 lg:gap-300 ">{/*summary */}
                 <BalanceCard 
