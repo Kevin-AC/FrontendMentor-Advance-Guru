@@ -1,6 +1,6 @@
 export default function ImputText(){
     return(
-        <div className="w-full relative ">
+        <div className="w-full relative sm:w-42 ">
             <input type="text" 
                 placeholder="Search transaction"
                 className="w-full border border-beige-500 preset-4 rounded-lg px-250 py-150 placeholder:text-beige-500 focus:outline-none focus:border-grey-900 focus:ring-1 focus:ring-grey-900" />
