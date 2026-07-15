@@ -63,8 +63,8 @@ export default function Transactions() {
                 
                 <div className="w-full overflow-x-auto">
                     <table className="w-full text-left border-collapse">
-                        <thead>
-                            <tr className="border-b border-grey-100 text-preset-5 text-grey-500">
+                        <thead className="hidden sm:table-header-group">
+                            <tr className="border-b border-grey-100 text-preset-5 text-grey-500 ">
                                 <th className="py-150 font-normal">Recipient / Sender</th>
                                 <th className="py-150 font-normal">Category</th>
                                 <th className="py-150 font-normal">Transaction Date</th>
