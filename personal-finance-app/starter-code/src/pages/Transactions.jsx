@@ -2,9 +2,9 @@ import ImputText from "../components/ImputText";
 import TransactionItem from "../components/TransactionItem"
 export default function Transactions() {
     return (
-        <main className="bg-beige-100 px-200 py-300 sm:px-500 sm:py-400 space-y-400">
+        <main className="bg-beige-100  px-200 py-300 sm:px-500 sm:py-400 space-y-400 ">
             <h2 className="preset-1 text-grey-900">Transactions</h2>
-            <section className="bg-white px-250 py-300 rounded-xl space-y-300">
+            <section className="bg-white px-250 py-300 rounded-xl space-y-300 max-w-265">
                 <div className="flex justify-between gap-300 w-full ">{/*input fields top*/}
                     <ImputText />
                     <div className="flex gap-250 sm:hidden">
@@ -59,90 +59,106 @@ export default function Transactions() {
                             </div>
                         </div>
                     </div>
-                 </div>   
-                <div className="flex flex-col divide-y divide-grey-100">
-                    {/*Table*/}
-                    <TransactionItem
-                        name={"Kevin"}
-                        category={'Personal Care'}
-                        avatar={"/images/avatars/daniel-carter.jpg"}
-                        amount={34}
-                        date={"2028-04-26"}
-                    />
-                    <TransactionItem
-                        name={"Kevin"}
-                        category={'Personal Care'}
-                        avatar={"/images/avatars/daniel-carter.jpg"}
-                        amount={34}
-                        date={"2028-04-26"}
-                    />
-                    <TransactionItem
-                        name={"Kevin"}
-                        category={'Personal Care'}
-                        avatar={"/images/avatars/daniel-carter.jpg"}
-                        amount={34}
-                        category={'Personal Care'}
-                        date={"2028-04-26"}
-                    />
-                    <TransactionItem
-                        name={"Kevin"}
-                        category={'Personal Care'}
-                        avatar={"/images/avatars/daniel-carter.jpg"}
-                        amount={34}
-                        date={"2028-04-26"}
-                    />
-                    <TransactionItem
-                        name={"Kevin"}
-                        category={'Personal Care'}
-                        avatar={"/images/avatars/daniel-carter.jpg"}
-                        amount={34}
-                        date={"2028-04-26"}
-                    />
-                    <TransactionItem
-                        name={"Kevin"}
-                        category={'Personal Care'}
-                        avatar={"/images/avatars/daniel-carter.jpg"}
-                        amount={34}
-                        category={'Personal Care'}
-                        date={"2028-04-26"}
-                    />
-                    <TransactionItem
-                        name={"Kevin"}
-                        category={'Personal Care'}
-                        avatar={"/images/avatars/daniel-carter.jpg"}
-                        amount={34}
-                        date={"2028-04-26"}
-                    />
-                    <TransactionItem
-                        name={"Kevin"}
-                        category={'Personal Care'}
-                        avatar={"/images/avatars/daniel-carter.jpg"}
-                        amount={34}
-                        date={"2028-04-26"}
-                    />
-                    <TransactionItem
-                        name={"Kevin"}
-                        category={'Personal Care'}
-                        avatar={"/images/avatars/daniel-carter.jpg"}
-                        amount={34}
-                        category={'Personal Care'}
-                        date={"2028-04-26"}
-                    />
-                    <TransactionItem
-                        name={"Kevin"}
-                        category={'Personal Care'}
-                        avatar={"/images/avatars/daniel-carter.jpg"}
-                        amount={34}
-                        date={"2028-04-26"}
-                    />
-                    <TransactionItem
-                        name={"Kevin"}
-                        category={'Personal Care'}
-                        avatar={"/images/avatars/daniel-carter.jpg"}
-                        amount={34}
-                        date={"2028-04-26"}
-                    />
+                </div>  
+                
+                <div className="w-full overflow-x-auto">
+                    <table className="w-full text-left border-collapse">
+                        <thead>
+                            <tr className="border-b border-grey-100 text-preset-5 text-grey-500">
+                                <th className="py-150 font-normal">Recipient / Sender</th>
+                                <th className="py-150 font-normal">Category</th>
+                                <th className="py-150 font-normal">Transaction Date</th>
+                                <th className="py-150 font-normal text-right">Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody className="divide-y divide-grey-100 ">
+                            <TransactionItem
+                                name={"Kevin"}
+                                category={'Personal Care'}
+                                avatar={"/images/avatars/daniel-carter.jpg"}
+                                amount={34}
+                                date={"2028-04-26"}
+                            />
+                            <TransactionItem
+                                name={"Kevin"}
+                                category={'Personal Care'}
+                                avatar={"/images/avatars/daniel-carter.jpg"}
+                                amount={34}
+                                date={"2028-04-26"}
+                            />
+                            <TransactionItem
+                                name={"Kevin"}
+                                category={'Personal Care'}
+                                avatar={"/images/avatars/daniel-carter.jpg"}
+                                amount={34}
+                                category={'Personal Care'}
+                                date={"2028-04-26"}
+                            />
+                            <TransactionItem
+                                name={"Kevin"}
+                                category={'Personal Care'}
+                                avatar={"/images/avatars/daniel-carter.jpg"}
+                                amount={34}
+                                date={"2028-04-26"}
+                            />
+                            <TransactionItem
+                                name={"Kevin"}
+                                category={'Personal Care'}
+                                avatar={"/images/avatars/daniel-carter.jpg"}
+                                amount={34}
+                                date={"2028-04-26"}
+                            />
+                            <TransactionItem
+                                name={"Kevin"}
+                                category={'Personal Care'}
+                                avatar={"/images/avatars/daniel-carter.jpg"}
+                                amount={34}
+                                category={'Personal Care'}
+                                date={"2028-04-26"}
+                            />
+                            <TransactionItem
+                                name={"Kevin"}
+                                category={'Personal Care'}
+                                avatar={"/images/avatars/daniel-carter.jpg"}
+                                amount={34}
+                                date={"2028-04-26"}
+                            />
+                            <TransactionItem
+                                name={"Kevin"}
+                                category={'Personal Care'}
+                                avatar={"/images/avatars/daniel-carter.jpg"}
+                                amount={34}
+                                date={"2028-04-26"}
+                            />
+                            <TransactionItem
+                                name={"Kevin"}
+                                category={'Personal Care'}
+                                avatar={"/images/avatars/daniel-carter.jpg"}
+                                amount={34}
+                                category={'Personal Care'}
+                                date={"2028-04-26"}
+                            />
+                            <TransactionItem
+                                name={"Kevin"}
+                                category={'Personal Care'}
+                                avatar={"/images/avatars/daniel-carter.jpg"}
+                                amount={34}
+                                date={"2028-04-26"}
+                            />
+                            <TransactionItem
+                                name={"Kevin"}
+                                category={'Personal Care'}
+                                avatar={"/images/avatars/daniel-carter.jpg"}
+                                amount={34}
+                                date={"2028-04-26"}
+                            />
+
+                        </tbody>
+
+                    </table>
+
                 </div>
+                
             </section>
 
         </main>
