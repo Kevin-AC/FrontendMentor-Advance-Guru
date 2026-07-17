@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import Sidebard from "./components/Sidebard"
 import Transactions from "./pages/Transactions"
 import Overview from './pages/Overview';
+import Budgets from './components/Budgets';
 
 
 function App() {
@@ -14,7 +15,8 @@ function App() {
           <Routes>
             <Route path='/' element={<Overview/>}/>
             <Route path='/transactions' element={<Transactions/>}/>
-            {/* <Route path="/budgets" element={<Budgets />} />
+            <Route path="/budgets" element={<Budgets />}/>
+            {/*
             <Route path="/pots" element={<Pots />} />
             <Route path="/recurring-bills" element={<RecurringBills />} /> */}
             
