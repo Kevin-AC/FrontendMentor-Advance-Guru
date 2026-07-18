@@ -12,17 +12,21 @@ export default function Budgets(){
           </button>
         </div>
         <section className="flex flex-col gap-10">
-          {/*frame*/}
           {/*left*/}
-          <section className="space-y-400 bg-white rounded-xl px-250 py-300">
-            <div className="flex justify-center">
+          <section className="sm:flex sm:justify-between items-center  gap-8 bg-white rounded-xl px-250 py-300 sm:p-400">
+            <div className="flex justify-center ">
               <Piechart />
             </div>
-            <SpendingSummary />
+            <div>
+                <SpendingSummary />
+            </div>
           </section>
           {/*right*/}
-          <section>
+          <section className="space-y-300">
             <BudgetCard/>
+            <BudgetCard />
+            <BudgetCard />
+            <BudgetCard />
           </section>
         </section>
       </main>

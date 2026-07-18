@@ -80,7 +80,7 @@ export default function Piechart() {
 
     return (
         // El contenedor debe tener dimensiones claras para que ECharts dibuje dentro
-        <div className="w-60 h-60">
+        <div className="w-62 h-62">
             <div ref={chartRef} className="w-full h-full" />
         </div>
     );

@@ -7,7 +7,7 @@ export default function SpendingSummary() {
     ];
 
     return (
-      <div className="bg-white  space-y-400 w-full max-w-md">
+      <div className="bg-white  space-y-400 w-full sm:w-74 ">
         <h3 className="preset-2 text-grey-900 font-bold">Spending Summary</h3>
         <ul className="flex flex-col divide-y divide-grey-100">
           {summaries.map((item) => (
