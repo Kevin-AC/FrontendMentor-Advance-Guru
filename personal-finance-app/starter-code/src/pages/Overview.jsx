@@ -5,8 +5,10 @@ import PotsCard from "../components/PotsCard";
 import RecurringCard from "../components/RecurringCard";
 import TransactionItem from "../components/TransactionItem";
 import useFinancialData from "../hooks/useFinancialData";
+import usePotsData from "../hooks/usePotsData";
 export default function Overview() {
   const{balance}= useFinancialData();
+  const { pots, totalSaved }=usePotsData();
   return (
       <main className="space-y-400 px-200 py-300 sm:px-500 sm:py-400 bg-beige-100">
       <h2 className="preset-1 text-grey-900">Overview</h2>
@@ -52,26 +54,18 @@ export default function Overview() {
                 />
                 <div className="space-y-150">
                   <p className="text-grey-500 preset-4">Total Saved</p>
-                  <p className="text-grey-900 preset-1">$850</p>
+                  <p className="text-grey-900 preset-1">{totalSaved}</p>
                 </div>
               </div>
               <div className="sm:w-89 grid grid-cols-2 gap-200">
-                <PotsCard
-                  title={"Savings"}
-                  balance={"$150"}
-                  color={"bg-green"}
-                />
-                <PotsCard title={"Gift"} balance={"$40"} color={"bg-cyan"} />
-                <PotsCard
-                  title={"Concert Ticket"}
-                  balance={"$110"}
-                  color={"bg-navy"}
-                />
-                <PotsCard
-                  title={"New Laptop"}
-                  balance={"$10"}
-                  color={"bg-yellow"}
-                />
+                {pots.slice(0,4).map((pot,index)=>(
+                  <PotsCard
+                    key={index}
+                    title={pot.name}
+                    balance={pot.formatTotal}
+                    color={pot.theme}
+                  />
+                ))}
               </div>
             </div>
           </section>
