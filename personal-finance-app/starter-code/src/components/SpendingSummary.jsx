@@ -7,13 +7,13 @@ export default function SpendingSummary() {
     ];
 
     return (
-      <div className="bg-white  space-y-400 w-full sm:w-74 ">
+      <div className="bg-white  space-y-400 w-full ">
         <h3 className="preset-2 text-grey-900 font-bold">Spending Summary</h3>
         <ul className="flex flex-col divide-y divide-grey-100">
           {summaries.map((item) => (
             <li
               key={item.id}
-              className="flex items-center justify-between py-250 first:pt-0 last:pb-0"
+              className="flex gap-400 items-center justify-between py-250 first:pt-0 last:pb-0"
             >
               <div className="flex items-center gap-200">
                 <div

@@ -17,7 +17,7 @@ export default function Budgets(){
             <div className="flex justify-center ">
               <Piechart />
             </div>
-            <div>
+            <div className="flex justify-center ">
                 <SpendingSummary />
             </div>
           </section>
