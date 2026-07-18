@@ -4,23 +4,27 @@ import Piechart from "../components/Piechart";
 import PotsCard from "../components/PotsCard";
 import RecurringCard from "../components/RecurringCard";
 import TransactionItem from "../components/TransactionItem";
+import useFinancialData from "../hooks/useFinancialData";
 export default function Overview() {
+  const{balance}= useFinancialData();
   return (
       <main className="space-y-400 px-200 py-300 sm:px-500 sm:py-400 bg-beige-100">
       <h2 className="preset-1 text-grey-900">Overview</h2>
       <section className="lg:w-265  flex flex-col sm:flex-row gap-150 lg:gap-300 ">
         {/*summary */}
-        <BalanceCard title={"Current Balance"} balance={"$4,836.00"} />
+        <BalanceCard 
+          title={"Current Balance"} 
+          balance={balance.current} />
         <BalanceCard
           title={"Income"}
-          balance={"$3,814.25"}
+          balance={balance.income}
           bgColor="bg-white"
           titleColor="text-grey-500"
           balanceColor="text-grey-900"
         />
         <BalanceCard
           title={"Expenses"}
-          balance={"$1,700.50"}
+          balance={balance.expenses}
           bgColor="bg-white"
           titleColor="text-grey-500"
           balanceColor="text-grey-900"
