@@ -3,12 +3,15 @@ import ButtonTertiary from "../components/ButtonTertiary";
 import Piechart from "../components/Piechart";
 import PotsCard from "../components/PotsCard";
 import RecurringCard from "../components/RecurringCard";
-import TransactionItem from "../components/TransactionItem";
+import TransactionItem from "../components/TransactionItem"
 import useFinancialData from "../hooks/useFinancialData";
 import usePotsData from "../hooks/usePotsData";
+import useTransactionsData from "../hooks/useTransactionsData";
+
 export default function Overview() {
   const{balance}= useFinancialData();
   const { pots, totalSaved }=usePotsData();
+  const {transactions}=useTransactionsData();
   return (
       <main className="space-y-400 px-200 py-300 sm:px-500 sm:py-400 bg-beige-100">
       <h2 className="preset-1 text-grey-900">Overview</h2>
@@ -78,38 +81,11 @@ export default function Overview() {
               <h2 className="preset-2">Transactions</h2>
               <ButtonTertiary name={"View All"} />
             </div>
-            <div className="flex flex-col">
-              {/*Table*/}
-              <TransactionItem
-                name={"Kevin"}
-                avatar={"/images/avatars/daniel-carter.jpg"}
-                amount={34}
-                date={"26-04-2028"}
-              />
-              <TransactionItem
-                name={"Kevin"}
-                avatar={"/images/avatars/daniel-carter.jpg"}
-                amount={34}
-                date={"26-04-2028"}
-              />
-              <TransactionItem
-                name={"Kevin"}
-                avatar={"/images/avatars/daniel-carter.jpg"}
-                amount={34}
-                date={"26-04-2028"}
-              />
-              <TransactionItem
-                name={"Kevin"}
-                avatar={"/images/avatars/daniel-carter.jpg"}
-                amount={34}
-                date={"26-04-2028"}
-              />
-              <TransactionItem
-                name={"Kevin"}
-                avatar={"/images/avatars/daniel-carter.jpg"}
-                amount={34}
-                date={"26-04-2028"}
-              />
+            <div className="flex flex-col w-full">
+              {transactions.slice(0, 5).map((tx, index) => (
+                <TransactionItem key={index} variant="compact" {...tx} />
+              ))}
+              
             </div>
           </section>
         </section>

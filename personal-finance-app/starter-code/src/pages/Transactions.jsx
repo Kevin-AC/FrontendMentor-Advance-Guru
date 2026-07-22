@@ -1,5 +1,5 @@
 import ImputText from "../components/ImputText";
-import TransactionItem from "../components/TransactionItem"
+//import TransactionItem from "../components/TransactionItem"
 export default function Transactions() {
     return (
         <main className="bg-beige-100  px-200 py-300 sm:px-500 sm:py-400 space-y-400 ">
@@ -72,86 +72,9 @@ export default function Transactions() {
                             </tr>
                         </thead>
                         <tbody className="divide-y divide-grey-100 ">
-                            <TransactionItem
-                                name={"Kevin"}
-                                category={'Personal Care'}
-                                avatar={"/images/avatars/daniel-carter.jpg"}
-                                amount={34}
-                                date={"2028-04-26"}
-                            />
-                            <TransactionItem
-                                name={"Kevin"}
-                                category={'Personal Care'}
-                                avatar={"/images/avatars/daniel-carter.jpg"}
-                                amount={34}
-                                date={"2028-04-26"}
-                            />
-                            <TransactionItem
-                                name={"Kevin"}
-                                category={'Personal Care'}
-                                avatar={"/images/avatars/daniel-carter.jpg"}
-                                amount={34}
-                                category={'Personal Care'}
-                                date={"2028-04-26"}
-                            />
-                            <TransactionItem
-                                name={"Kevin"}
-                                category={'Personal Care'}
-                                avatar={"/images/avatars/daniel-carter.jpg"}
-                                amount={34}
-                                date={"2028-04-26"}
-                            />
-                            <TransactionItem
-                                name={"Kevin"}
-                                category={'Personal Care'}
-                                avatar={"/images/avatars/daniel-carter.jpg"}
-                                amount={34}
-                                date={"2028-04-26"}
-                            />
-                            <TransactionItem
-                                name={"Kevin"}
-                                category={'Personal Care'}
-                                avatar={"/images/avatars/daniel-carter.jpg"}
-                                amount={34}
-                                category={'Personal Care'}
-                                date={"2028-04-26"}
-                            />
-                            <TransactionItem
-                                name={"Kevin"}
-                                category={'Personal Care'}
-                                avatar={"/images/avatars/daniel-carter.jpg"}
-                                amount={34}
-                                date={"2028-04-26"}
-                            />
-                            <TransactionItem
-                                name={"Kevin"}
-                                category={'Personal Care'}
-                                avatar={"/images/avatars/daniel-carter.jpg"}
-                                amount={34}
-                                date={"2028-04-26"}
-                            />
-                            <TransactionItem
-                                name={"Kevin"}
-                                category={'Personal Care'}
-                                avatar={"/images/avatars/daniel-carter.jpg"}
-                                amount={34}
-                                category={'Personal Care'}
-                                date={"2028-04-26"}
-                            />
-                            <TransactionItem
-                                name={"Kevin"}
-                                category={'Personal Care'}
-                                avatar={"/images/avatars/daniel-carter.jpg"}
-                                amount={34}
-                                date={"2028-04-26"}
-                            />
-                            <TransactionItem
-                                name={"Kevin"}
-                                category={'Personal Care'}
-                                avatar={"/images/avatars/daniel-carter.jpg"}
-                                amount={34}
-                                date={"2028-04-26"}
-                            />
+                            {/* {transactions.map((tx, index) => (
+                                <TransactionItem key={index} variant="table" {...tx} />
+                            ))} */}
 
                         </tbody>
 
