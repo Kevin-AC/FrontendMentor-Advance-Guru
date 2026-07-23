@@ -5,7 +5,7 @@ export default function Sidebard(){
 
     return(
         <aside className={`p-0 bottom-0  fixed lg:relative z-50  w-full  rounded-t-2xl  lg:h-full lg:rounded-t-none  lg:rounded-r-2xl bg-grey-900 flex flex-col justify-between transition-all duration-300 pb-[env(safe-area-inset-bottom)] ${isMinimized ? "lg:w-28" : "lg:w-75"}`}>
-            <div className="h-13 pt-2">
+            <div className="h-13 sm:h-18 pt-2">
                 <div className="hidden lg:block px-500 py-400">
                     {isMinimized ? (
                         <img className="w-6" src="/images/logo-small.svg" alt="logo-small" />
@@ -13,7 +13,7 @@ export default function Sidebard(){
                         <img src="/images/logo-large.svg" alt="finance-logo" />
                     )}
                 </div>
-                <nav className="px-200 sm:px-500 lg:pr-300 lg:px-0 h-full  w-full ">
+                <nav className="px-200 sm:px-500 lg:pr-300 lg:px-0 h-full w-full ">
                     <ul className="flex justify-between items-center  lg:items-start lg:flex-col h-full ">
                         <NavLink
                             to="/"
