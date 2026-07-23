@@ -9,7 +9,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <main className="w-full h-screen flex flex-col lg:flex-row font-public-sans bg-bg lg:overflow-hidden ">
+      <main className="w-full h-screen flex flex-col lg:flex-row font-public-sans  bg-beige-100 lg:overflow-hidden ">
         <Sidebard />
         <section className="flex-1 h-full overflow-y-auto pb-28 lg:pb-0 ">
           <Routes>
