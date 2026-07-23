@@ -9,9 +9,9 @@ function App() {
 
   return (
     <BrowserRouter>
-      <main className="w-full h-screen  lg:pb-0 flex font-public-sans bg-bg overflow-hidden pb-[calc(5rem+env(safe-area-inset-bottom))]">
+      <main className="w-full h-screen  lg:pb-0 flex font-public-sans bg-bg lg:overflow-hidden pb-[calc(5rem+env(safe-area-inset-bottom))]">
         <Sidebard />
-        <section className="flex-1 h-full  overflow-y-auto">
+        <section className="flex-1 h-full  lg:overflow-y-auto">
           <Routes>
             <Route path='/' element={<Overview/>}/>
             <Route path='/transactions' element={<Transactions/>}/>
