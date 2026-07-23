@@ -13,9 +13,9 @@ export default function Overview() {
   const { pots, totalSaved }=usePotsData();
   const {transactions}=useTransactionsData();
   return (
-      <main className="space-y-400 px-200 py-300 sm:px-500 sm:py-400 bg-beige-100 pb-24">
+      <main className=" px-200 py-300 sm:px-500 sm:py-400 bg-beige-100 pb-24 ">
       <h2 className="preset-1 text-grey-900">Overview</h2>
-      <section className="lg:w-265  flex flex-col sm:flex-row gap-150 lg:gap-300 ">
+      <section className="lg:w-265 py-400  flex flex-col sm:flex-row gap-150 lg:gap-300 ">
         {/*summary */}
         <BalanceCard 
           title={"Current Balance"} 
