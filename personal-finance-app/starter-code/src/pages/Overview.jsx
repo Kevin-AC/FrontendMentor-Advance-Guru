@@ -101,7 +101,7 @@ export default function Overview() {
               <ButtonTertiary name={"See Details"} />
             </div>
             <div className="flex flex-col sm:flex-row sm:justify-between gap-200 ">
-              <div className="w-fit sm:w-126 lg:w-fit flex justify-center">
+              <div className="w-full sm:w-96 lg:w-fit flex justify-center">
                 <Piechart />
               </div>
               <div className="grid grid-cols-2 sm:grid-cols-1 gap-200 ">
